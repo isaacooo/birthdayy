@@ -87,13 +87,6 @@
 
         /* 📌 Posiciones de los Stickers (Ajustadas para no recortarse) */
 
-        /* Sticker Superior (usando el padding del .container como espacio) */
-        #sticker-top {
-            top: 10px; /* Separado 10px del borde superior del .container */
-            right: 10px;
-            background-image: url('images/corazon.png'); /* 🖼️ Cambia esta URL */
-        }
-
         /* --- Estilos de Control del Carrusel (Flechas) --- */
         .carousel-control {
             position: absolute;
@@ -140,23 +133,7 @@
         }
 
         /* 📌 Posiciones de los Stickers del Carrusel (Relativas a la sección #carrusel) */
-        /* Nota: Se usan valores altos de 'top' ya que son relativos a todo el contenedor blanco */
-
-        #sticker-carrusel-left {
-            /* Deberás ajustar este valor hasta que quede justo encima del carrusel */
-            top: 550px; 
-            left: 5px;
-            background-image: url('images/judy.png'); /* 🖼️ Cambia esta URL */
-            border-color: var(--primary-color);
-        }
-
-        #sticker-carrusel-right {
-            /* Deberás usar el mismo valor 'top' que el izquierdo */
-            top: 550px; 
-            right: 5px;
-            background-image: url('images/nick.png'); /* 🖼️ Cambia esta URL */
-            border-color: var(--primary-color);
-        }
+        /* Nota: Se usan valores altos de 'top' ya que son relativos a todo el contenedor blanco 
 
 
         /* Media Query para asegurar la adaptabilidad en móvil */
@@ -258,14 +235,14 @@
 
     <script>
     // ⚠️ REEMPLAZA 'AQUI_VA_LA_CONTRASENA_SECRETA' por la clave que quieres usar.
-    const CORRECT_PASSWORD = "ekasici"; 
+    const CORRECT_PASSWORD = "2019"; 
 
     // Oculta el contenido de la página por defecto
     document.body.style.display = 'none';
 
     function checkPassword() {
         // Pide la contraseña al usuario
-        const enteredPassword = prompt("Introduce la contraseña para ver: (pista es el apodo que mas te digo)");
+        const enteredPassword = prompt("Introduce la contraseña para ver: (pista es el año que nos conocimos)");
 
         // Verifica si la contraseña introducida es correcta
         if (enteredPassword === CORRECT_PASSWORD) {
@@ -284,4 +261,5 @@
     checkPassword();
 </script>
 </body>
+
 </html>
